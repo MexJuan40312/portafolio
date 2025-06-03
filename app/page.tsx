@@ -19,7 +19,7 @@ export default function HomePage() {
     description:
       "Creo experiencias web excepcionales combinando diseño elegante con código eficiente. Especializado en React, Next.js y tecnologías modernas.",
     avatar: "/images/profile/perfil.jpg?height=400&width=400",
-    location: "Ciudad, País",
+    location: "Toluca, México",
   }
 
   // Enlaces sociales
