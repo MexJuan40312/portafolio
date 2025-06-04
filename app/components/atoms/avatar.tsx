@@ -20,7 +20,7 @@ interface AvatarProps {
   className?: string
 }
 
-export const Avatar = ({ src = "/placeholder.svg?height=200&width=200", alt, size = "md", className }: AvatarProps) => {
+export const Avatar = ({ src = "/images/profile/perfil.jpg?height=200&width=200", alt, size = "md", className }: AvatarProps) => {
   // Tamaños disponibles para el avatar
   const sizes = {
     sm: "w-8 h-8",
@@ -38,7 +38,7 @@ export const Avatar = ({ src = "/placeholder.svg?height=200&width=200", alt, siz
       )}
     >
       <Image
-        src={src || "/placeholder.svg"}
+        src={src || "/images/profile/perfil.jpg"}
         alt={alt}
         fill
         className="object-cover"

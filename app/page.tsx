@@ -24,8 +24,8 @@ export default function HomePage() {
 
   // Enlaces sociales
   const socialLinks = {
-    github: "https://github.com/tu-usuario",
-    linkedin: "https://linkedin.com/in/tu-perfil",
+    github: "https://www.instagram.com/juanr.gn/",
+    linkedin: "https://linkedin.com/in/",
     twitter: "https://twitter.com/tu-usuario",
     email: "tu-email@ejemplo.com",
   }
