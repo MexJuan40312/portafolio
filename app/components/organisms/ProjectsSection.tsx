@@ -1,5 +1,5 @@
-import type { Project } from "@/app/types"
-import { ProjectCard } from "@/app/components/molecules/ProjectCard"
+import type { Project } from "@/types"
+import { ProjectCard } from "@/components/molecules/ProjectCard"
 
 interface ProjectsSectionProps {
   projects: Project[]
