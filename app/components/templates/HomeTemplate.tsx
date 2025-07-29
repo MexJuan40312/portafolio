@@ -1,5 +1,5 @@
 import type { PersonalInfo, Project, Experience, Education } from "@/app/types"
-import { Navbar } from "@/app/components/organisms/Navbar"
+import { Navbar } from "../organisms/Navbar"
 import { HeroSection } from "@/app/components/organisms/HeroSection"
 import { AboutSection } from "@/app/components/organisms/AboutSection"
 import { ExperienceSection } from "@/app/components/organisms/ExperienceSection"
