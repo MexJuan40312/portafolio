@@ -1,9 +1,9 @@
 "use client"
 
 import { Github } from "lucide-react"
-import type { Project } from "@/types"
-import { Button } from "@/components/atoms/Button"
-import { Badge } from "@/components/atoms/Badge"
+import type { Project } from "@/app/types"
+import { Button } from "../atoms/Button"
+import { Badge } from "../atoms/Badge"
 // Add Image import from Next.js
 import Image from "next/image"
 
