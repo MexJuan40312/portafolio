@@ -1,4 +1,5 @@
 import { SkillSection } from "@/components/molecules/SkillSection"
+
 export const AboutSection = () => {
   const technicalSkills = [
     "JavaScript",
