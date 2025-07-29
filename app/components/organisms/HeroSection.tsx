@@ -1,9 +1,9 @@
 "use client"
 
 import Image from "next/image"
-import type { PersonalInfo } from "@/app/types"
-import { SocialLinks } from "@/app/components/molecules/SocialLinks"
-import { Button } from "@/app/components/atoms/Button"
+import type { PersonalInfo } from "@/types"
+import { SocialLinks } from "@/components/molecules/SocialLinks"
+import { Button } from "@/components/atoms/Button"
 import { Download, ChevronDown } from "lucide-react"
 
 interface HeroSectionProps {

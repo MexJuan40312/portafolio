@@ -1,4 +1,4 @@
-import { SkillSection } from "@/app/components/molecules/SkillSection"
+import { SkillSection } from "@/components/molecules/SkillSection"
 
 export const AboutSection = () => {
   const technicalSkills = [

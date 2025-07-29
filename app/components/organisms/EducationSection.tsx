@@ -1,4 +1,4 @@
-import type { Education } from "@/app/types"
+import type { Education } from "@/types"
 
 interface EducationSectionProps {
   education: Education[]

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Menu, X, Download } from "lucide-react"
-import { Button } from "@/app/components/atoms/Button"
+import { Button } from "@/components/atoms/Button"
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)

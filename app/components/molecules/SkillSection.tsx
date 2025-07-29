@@ -1,4 +1,4 @@
-import { Badge } from "@/app/components/atoms/Badge"
+import { Badge } from "@/components/atoms/Badge"
 
 interface SkillSectionProps {
   title: string
