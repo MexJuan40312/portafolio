@@ -12,14 +12,12 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": ".", // Asegúrate de que esto siga siendo la raíz del proyecto
+    "baseUrl": ".",
     "paths": {
       "@/components/*": ["./app/components/*"],
       "@/types/*": ["./app/types/*"],
-      // AGREGAR ESTA LÍNEA para el alias de @/lib
-      "@/lib/*": ["./app/lib/*"] // Si 'lib' está dentro de 'app'
-      // O si tu carpeta 'lib' está directamente en la raíz del proyecto (al mismo nivel que 'app'):
-      // "@/lib/*": ["./lib/*"]
+      // ¡CORRECCIÓN CRÍTICA AQUÍ!
+      "@/lib/*": ["./lib/*"] // La carpeta 'lib' está en la raíz, no dentro de 'app'
     },
     "plugins": [
       {
