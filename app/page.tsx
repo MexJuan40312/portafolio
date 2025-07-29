@@ -1,5 +1,5 @@
-import { HomeTemplate } from "./components/templates/HomeTemplate"
-import type { PersonalInfo, Project, Experience, Education } from "./types/index"
+import { HomeTemplate } from "@/app/components/templates/HomeTemplate"
+import type { PersonalInfo, Project, Experience, Education } from "@/app/types"
 
 const personalInfo: PersonalInfo = {
   name: "Juan Raul Gonzalez Narvaez",
@@ -19,7 +19,7 @@ const projects: Project[] = [
       "Plataforma nutricional completa desarrollada con tecnologías modernas. Incluye gestión de planes alimenticios, seguimiento de progreso y panel administrativo.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Express.js"],
     githubUrl: "https://github.com/juanraulgonzaleznarvaez/nutritec",
-    imageUrl: "/images/projects/nutritec-preview.png",
+    imageUrl: "/placeholder.svg?height=192&width=400&text=Nutritec+Preview",
   },
   {
     id: "2",
@@ -28,7 +28,7 @@ const projects: Project[] = [
       "Plataforma de bienes raíces que permite a los usuarios buscar, filtrar y contactar sobre propiedades. Sistema completo de gestión inmobiliaria.",
     technologies: ["Express.js", "Node.js", "MySQL", "HTML5", "CSS3"],
     githubUrl: "https://github.com/juanraulgonzaleznarvaez/homefinder",
-    imageUrl: "/images/projects/homefinder-preview.png",
+    imageUrl: "/placeholder.svg?height=192&width=400&text=Homefinder+Preview",
   },
   {
     id: "3",
@@ -37,7 +37,7 @@ const projects: Project[] = [
       "Plataforma de búsqueda de empleo que conecta candidatos con empleadores. Incluye sistema de aplicaciones, filtros avanzados y gestión de perfiles.",
     technologies: ["Laravel", "PHP", "MySQL", "Bootstrap"],
     githubUrl: "https://github.com/juanraulgonzaleznarvaez/tesjojobs",
-    imageUrl: "/images/projects/tesjojobs-preview.png",
+    imageUrl: "/placeholder.svg?height=192&width=400&text=TesjoJobs+Preview",
   },
   {
     id: "4",
@@ -46,7 +46,7 @@ const projects: Project[] = [
       "Sistema de control y gestión para maestros desarrollado con PHP y Oracle Database. Permite el seguimiento de actividades académicas y administrativas.",
     technologies: ["PHP", "Oracle Database", "HTML5", "CSS3", "JavaScript"],
     githubUrl: "https://github.com/juanraulgonzaleznarvaez/tesjodays",
-    imageUrl: "/images/projects/tesjodays-preview.png",
+    imageUrl: "/placeholder.svg?height=192&width=400&text=TesjoDays+Preview",
   },
   {
     id: "5",
@@ -55,7 +55,7 @@ const projects: Project[] = [
       "Sitio web elegante para la visualización y presentación de productos artísticos. Diseño moderno y responsive sin backend, enfocado en la experiencia visual.",
     technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
     githubUrl: "https://github.com/juanraulgonzaleznarvaez/sublimarte",
-    imageUrl: "/images/projects/sublimarte-preview.png",
+    imageUrl: "/placeholder.svg?height=192&width=400&text=SublimARTE+Preview",
   },
 ]
 

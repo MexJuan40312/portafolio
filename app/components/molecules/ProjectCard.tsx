@@ -2,16 +2,14 @@
 
 import { Github } from "lucide-react"
 import type { Project } from "@/app/types"
-import { Button } from "../atoms/Button"
-import { Badge } from "../atoms/Badge"
-// Add Image import from Next.js
+import { Button } from "@/app/components/atoms/Button"
+import { Badge } from "@/app/components/atoms/Badge"
 import Image from "next/image"
 
 interface ProjectCardProps {
   project: Project
 }
 
-// Update the ProjectCard component to include the project image
 export const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10">
@@ -19,7 +17,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
         {/* Project Image */}
         <div className="relative h-48 w-full overflow-hidden">
           <Image
-            src={project.imageUrl || "/placeholder.svg"}
+            src={project.imageUrl || "/placeholder.svg?height=192&width=400&text=Project+Preview"}
             alt={`Preview del proyecto ${project.title}`}
             fill
             className="object-cover transition-transform duration-300 hover:scale-105"

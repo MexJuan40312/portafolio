@@ -1,9 +1,9 @@
 "use client"
 
 import Image from "next/image"
-import type { PersonalInfo } from "@/types"
-import { SocialLinks } from "@/components/molecules/SocialLinks"
-import { Button } from "@/components/atoms/Button"
+import type { PersonalInfo } from "@/app/types"
+import { SocialLinks } from "@/app/components/molecules/SocialLinks"
+import { Button } from "@/app/components/atoms/Button"
 import { Download, ChevronDown } from "lucide-react"
 
 interface HeroSectionProps {
@@ -31,7 +31,7 @@ export const HeroSection = ({ personalInfo }: HeroSectionProps) => {
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-purple-500/30 shadow-2xl shadow-purple-500/20">
                 <Image
-                  src="/images/profile-placeholder.png"
+                  src="/placeholder.svg?height=320&width=320&text=Profile+Photo"
                   alt={personalInfo.name}
                   width={320}
                   height={320}

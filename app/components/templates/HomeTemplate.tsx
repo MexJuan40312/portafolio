@@ -1,11 +1,11 @@
-import type { PersonalInfo, Project, Experience, Education } from "@/types"
-import { Navbar } from "@/components/organisms/Navbar"
-import { HeroSection } from "@/components/organisms/HeroSection"
-import { AboutSection } from "@/components/organisms/AboutSection"
-import { ExperienceSection } from "@/components/organisms/ExperienceSection"
-import { ProjectsSection } from "@/components/organisms/ProjectsSection"
-import { EducationSection } from "@/components/organisms/EducationSection"
-import { Footer } from "@/components/organisms/Footer"
+import type { PersonalInfo, Project, Experience, Education } from "@/app/types"
+import { Navbar } from "@/app/components/organisms/Navbar"
+import { HeroSection } from "@/app/components/organisms/HeroSection"
+import { AboutSection } from "@/app/components/organisms/AboutSection"
+import { ExperienceSection } from "@/app/components/organisms/ExperienceSection"
+import { ProjectsSection } from "@/app/components/organisms/ProjectsSection"
+import { EducationSection } from "@/app/components/organisms/EducationSection"
+import { Footer } from "@/app/components/organisms/Footer"
 
 interface HomeTemplateProps {
   personalInfo: PersonalInfo
