@@ -2,7 +2,7 @@
 
 import { Github } from "lucide-react"
 import type { Project } from "@/app/types"
-import { Button } from "../atoms/Button"
+import { Button } from "@/app/components/atoms/Button"
 import { Badge } from "@/app/components/atoms/Badge"
 import Image from "next/image"
 
