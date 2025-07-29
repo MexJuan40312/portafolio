@@ -4,7 +4,6 @@ import { Github } from "lucide-react"
 import type { Project } from "@/types"
 import { Button } from "@/components/atoms/Button"
 import { Badge } from "@/components/atoms/Badge"
-// Add Image import from Next.js
 import Image from "next/image"
 
 interface ProjectCardProps {
