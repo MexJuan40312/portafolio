@@ -1,5 +1,5 @@
 import { HomeTemplate } from "@/components/templates/HomeTemplate"
-import type { PersonalInfo, Project, Experience, Education } from "@/types"
+import type { PersonalInfo, Project, Experience, Education } from "@/types/index"
 
 const personalInfo: PersonalInfo = {
   name: "Juan Raul Gonzalez Narvaez",

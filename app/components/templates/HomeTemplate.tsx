@@ -1,4 +1,4 @@
-import type { PersonalInfo, Project, Experience, Education } from "@/types"
+import type { PersonalInfo, Project, Experience, Education } from "@/types/index"
 import { Navbar } from "@/components/organisms/Navbar"
 import { HeroSection } from "@/components/organisms/HeroSection"
 import { AboutSection } from "@/components/organisms/AboutSection"
