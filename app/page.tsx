@@ -1,101 +1,107 @@
-import { PortfolioLayout } from "@/app/components/templates/portafolio-layout"
-import { HeroSection } from "@/app/components/organisms/hero-section"
-import { AboutSection } from "@/app/components/organisms/about-section"
-import { ProjectsSection } from "@/app/components/organisms/projects-section"
-import { ContactSection } from "@/app/components/organisms/contact-section"
+import { HomeTemplate } from "@/app/components/templates/HomeTemplate"
+import type { PersonalInfo, Project, Experience, Education } from "@/app/types"
 
-/**
- * PAGE: Home Page
- *
- * Página principal del portafolio que combina todas las secciones
- * y utiliza la plantilla base para mantener consistencia.
- */
+const personalInfo: PersonalInfo = {
+  name: "Juan Raul Gonzalez Narvaez",
+  title: "Estudiante de Ingeniería en Sistemas Computacionales",
+  email: "juanraul.gonzalez.narvaez@gmail.com",
+  phone: "(+52) 729/009458",
+  linkedin: "https://linkedin.com/in/juan-raul-gonzalez-narvaez",
+  github: "https://github.com/juanraulgonzaleznarvaez",
+  instagram: "https://instagram.com/mexjuan40312",
+}
 
-export default function HomePage() {
-  // Información del usuario - En un proyecto real, esto vendría de una API o CMS
-  const userInfo = {
-    name: "Juan Raul González Narvaez",
-    title: "Desarrollador Full Stack",
+const projects: Project[] = [
+  {
+    id: "1",
+    title: "Nutritec",
     description:
-      "Creo experiencias web excepcionales combinando diseño elegante con código eficiente. Especializado en React, Next.js y tecnologías modernas.",
-    avatar: "/images/profile/perfil.jpg?height=400&width=400",
-    location: "Toluca, México",
-  }
+      "Plataforma nutricional completa desarrollada con tecnologías modernas. Incluye gestión de planes alimenticios, seguimiento de progreso y panel administrativo.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Express.js"],
+    githubUrl: "https://github.com/juanraulgonzaleznarvaez/nutritec",
+    imageUrl: "/images/projects/nutritec-preview.png",
+  },
+  {
+    id: "2",
+    title: "Homefinder",
+    description:
+      "Plataforma de bienes raíces que permite a los usuarios buscar, filtrar y contactar sobre propiedades. Sistema completo de gestión inmobiliaria.",
+    technologies: ["Express.js", "Node.js", "MySQL", "HTML5", "CSS3"],
+    githubUrl: "https://github.com/juanraulgonzaleznarvaez/homefinder",
+    imageUrl: "/images/projects/homefinder-preview.png",
+  },
+  {
+    id: "3",
+    title: "TesjoJobs",
+    description:
+      "Plataforma de búsqueda de empleo que conecta candidatos con empleadores. Incluye sistema de aplicaciones, filtros avanzados y gestión de perfiles.",
+    technologies: ["Laravel", "PHP", "MySQL", "Bootstrap"],
+    githubUrl: "https://github.com/juanraulgonzaleznarvaez/tesjojobs",
+    imageUrl: "/images/projects/tesjojobs-preview.png",
+  },
+  {
+    id: "4",
+    title: "TesjoDays",
+    description:
+      "Sistema de control y gestión para maestros desarrollado con PHP y Oracle Database. Permite el seguimiento de actividades académicas y administrativas.",
+    technologies: ["PHP", "Oracle Database", "HTML5", "CSS3", "JavaScript"],
+    githubUrl: "https://github.com/juanraulgonzaleznarvaez/tesjodays",
+    imageUrl: "/images/projects/tesjodays-preview.png",
+  },
+  {
+    id: "5",
+    title: "SublimARTE",
+    description:
+      "Sitio web elegante para la visualización y presentación de productos artísticos. Diseño moderno y responsive sin backend, enfocado en la experiencia visual.",
+    technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
+    githubUrl: "https://github.com/juanraulgonzaleznarvaez/sublimarte",
+    imageUrl: "/images/projects/sublimarte-preview.png",
+  },
+]
 
-  // Enlaces sociales
-  const socialLinks = {
-    github: "https://www.instagram.com/juanr.gn/",
-    linkedin: "https://linkedin.com/in/",
-    twitter: "https://twitter.com/tu-usuario",
-    email: "tu-email@ejemplo.com",
-  }
+const experiences: Experience[] = [
+  {
+    title: "Mantenimiento de equipos de cómputo",
+    period: "2023 - Presente",
+    description: [
+      "Ensamblado de computadoras",
+      "Mantenimiento y reparación de computadoras",
+      "Instalación y actualización de software como controladores, aplicaciones y servicios",
+    ],
+  },
+  {
+    title: "Diseño para ventas",
+    period: "2020 - Presente",
+    description: [
+      "Diseño y venta de contenido multimedia para pública general",
+      "Diseño de elementos visuales para una imprenta de sublimado",
+      "Publicidad en productos y viajes",
+    ],
+  },
+  {
+    title: "Desarrollo de software",
+    period: "2023 - Presente",
+    description: ["Desarrollo de aplicaciones web usando Express.js (Node), React, Next.js"],
+  },
+]
 
-  // Información para la sección About
-  const aboutInfo = {
-    biography:
-      "Soy un desarrollador web apasionado con más de 3 años de experiencia creando aplicaciones web modernas y eficientes. Mi viaje comenzó con curiosidad por entender cómo funcionan las páginas web, y se ha convertido en una carrera dedicada a resolver problemas complejos a través del código.",
-    experience:
-      "He trabajado con startups y empresas establecidas, desarrollando desde landing pages hasta aplicaciones web complejas. Mi experiencia abarca tanto frontend como backend, con un enfoque especial en la experiencia del usuario y el rendimiento.",
-    passion:
-      "Lo que más me motiva es la posibilidad de crear soluciones que realmente impacten la vida de las personas. Cada línea de código que escribo está pensada para hacer la web un lugar mejor, más accesible y más eficiente.",
-  }
+const education: Education[] = [
+  {
+    degree: "Ingeniería en Sistemas Computacionales",
+    institution: "Tecnológico de Estudios Superiores de Jocotitlán",
+    period: "2020 - Presente",
+    description: "Especialización en desarrollo de software, bases de datos y sistemas computacionales.",
+  },
+  {
+    degree: "Bachillerato Tecnológico Bivalente CECyTEM",
+    institution: "Técnico en Animación Digital",
+    period: "2019 - 2021",
+    description: "Formación técnica en animación digital y diseño multimedia.",
+  },
+]
 
-  // Habilidades técnicas
-  const skills = [
-    {
-      title: "React & Next.js",
-      description:
-        "Desarrollo de aplicaciones web modernas con React y Next.js, incluyendo SSR, SSG y optimización de rendimiento.",
-      level: "Avanzado" as const,
-      category: "frontend" as const,
-    },
-    {
-      title: "TypeScript",
-      description: "Desarrollo tipado para mayor robustez y mantenibilidad del código.",
-      level: "Avanzado" as const,
-      category: "frontend" as const,
-    },
-    {
-      title: "Node.js & Express",
-      description: "Desarrollo de APIs REST y GraphQL, autenticación y manejo de bases de datos.",
-      level: "Intermedio" as const,
-      category: "backend" as const,
-    },
-    {
-      title: "Bases de Datos",
-      description: "PostgreSQL, MongoDB, Prisma ORM y optimización de consultas.",
-      level: "Intermedio" as const,
-      category: "database" as const,
-    },
-  ]
-
+export default function Home() {
   return (
-    <PortfolioLayout
-      userInfo={userInfo}
-      cvUrl="/cv-ejemplo.pdf" // Ruta al archivo CV
-    >
-      {/* Sección Hero - Primera impresión */}
-      <HeroSection userInfo={userInfo} socialLinks={socialLinks} />
-
-      {/* Sección About - Información detallada */}
-      <AboutSection aboutInfo={aboutInfo} skills={skills} />
-
-      {/* Sección Projects - Portafolio de proyectos */}
-      <ProjectsSection
-        githubUrl={socialLinks.github}
-        // Puedes pasar proyectos personalizados aquí si los tienes
-      />
-
-      {/* Sección Contact - Formulario y información de contacto */}
-      <ContactSection
-        socialLinks={socialLinks}
-        contactInfo={{
-          email: socialLinks.email,
-          phone: "+1 (555) 123-4567", // Cambia por tu número real
-          location: userInfo.location,
-          availability: "Disponible para proyectos freelance y colaboraciones",
-        }}
-      />
-    </PortfolioLayout>
+    <HomeTemplate personalInfo={personalInfo} projects={projects} experiences={experiences} education={education} />
   )
 }

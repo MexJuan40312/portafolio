@@ -1,144 +1,113 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Button } from "@/app/components/atoms/button"
-import { Avatar } from "@/app/components/atoms/avatar"
 import { Menu, X, Download } from "lucide-react"
-import { cn } from "@/app/lib/utils"
+import { Button } from "@/app/components/atoms/Button"
 
-/**
- * ORGANISM: Navbar Component
- *
- * Barra de navegación principal que combina múltiples moléculas y átomos.
- * Incluye navegación responsive, scroll effects y descarga de CV.
- *
- * @param userInfo - Información básica del usuario
- * @param cvUrl - URL del archivo CV para descarga
- */
+export const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
 
-interface NavbarProps {
-  userInfo: {
-    name: string
-    avatar?: string
-  }
-  cvUrl?: string
-}
-
-export const Navbar = ({ userInfo, cvUrl }: NavbarProps) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
-
-  // Detectar scroll para cambiar apariencia del navbar
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20)
+      setScrolled(window.scrollY > 50)
     }
-
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  // Enlaces de navegación
-  const navigationLinks = [
-    { href: "#home", label: "Inicio" },
-    { href: "#about", label: "Acerca de" },
-    { href: "#projects", label: "Proyectos" },
-    { href: "#contact", label: "Contacto" },
+  const navItems = [
+    { href: "#inicio", label: "Inicio" },
+    { href: "#sobre-mi", label: "Sobre Mí" },
+    { href: "#experiencia", label: "Experiencia" },
+    { href: "#proyectos", label: "Proyectos" },
+    { href: "#educacion", label: "Educación" },
   ]
 
-  // Función para scroll suave a secciones
-  const handleNavClick = (href: string) => {
+  const scrollToSection = (href: string) => {
     const element = document.querySelector(href)
     if (element) {
       element.scrollIntoView({ behavior: "smooth" })
-      setIsMenuOpen(false) // Cerrar menú móvil después de navegar
     }
-  }
-
-  // Función para descargar CV
-  const handleDownloadCV = () => {
-    if (cvUrl) {
-      const link = document.createElement("a")
-      link.href = cvUrl
-      link.download = `${userInfo.name}_CV.pdf`
-      document.body.appendChild(link)
-      link.click()
-      document.body.removeChild(link)
-    }
+    setIsOpen(false)
   }
 
   return (
     <nav
-      className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled ? "bg-gray-900/95 backdrop-blur-md border-b border-gray-800/50 shadow-lg" : "bg-transparent",
-      )}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        scrolled ? "bg-gray-900/95 backdrop-blur-sm border-b border-gray-800" : "bg-transparent"
+      }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo/Avatar y nombre */}
-          <div className="flex items-center space-x-3">
-            <Avatar src={userInfo.avatar} alt={userInfo.name} size="sm" />
-            <span className="text-white font-semibold text-lg">{userInfo.name}</span>
+        <div className="flex justify-between items-center h-16">
+          <div className="flex-shrink-0">
+            <span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
+              JRG
+            </span>
           </div>
 
-          {/* Navegación desktop */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navigationLinks.map((link) => (
-              <button
-                key={link.href}
-                onClick={() => handleNavClick(link.href)}
-                className="text-gray-300 hover:text-purple-400 transition-colors duration-200 font-medium"
-              >
-                {link.label}
-              </button>
-            ))}
-
-            {/* Botón de descarga de CV */}
-            {cvUrl && (
-              <Button variant="primary" size="sm" onClick={handleDownloadCV} className="ml-4">
-                <Download className="w-4 h-4 mr-2" />
-                Descargar CV
-              </Button>
-            )}
+          {/* Desktop Navigation */}
+          <div className="hidden md:block">
+            <div className="ml-10 flex items-baseline space-x-4">
+              {navItems.map((item) => (
+                <button
+                  key={item.href}
+                  onClick={() => scrollToSection(item.href)}
+                  className="text-gray-300 hover:text-purple-400 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+                >
+                  {item.label}
+                </button>
+              ))}
+            </div>
           </div>
 
-          {/* Botón menú móvil */}
-          <div className="md:hidden">
+          <div className="hidden md:block">
             <Button
-              variant="ghost"
+              variant="outline"
               size="sm"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              aria-label="Abrir menú de navegación"
+              onClick={() => window.open("/documents/cv-juan-raul-gonzalez.pdf", "_blank")}
+              className="flex items-center gap-2"
             >
-              {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              <Download size={16} />
+              Descargar CV
             </Button>
+          </div>
+
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-gray-400 hover:text-white focus:outline-none focus:text-white"
+            >
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
           </div>
         </div>
 
-        {/* Menú móvil */}
-        {isMenuOpen && (
-          <div className="md:hidden bg-gray-900/95 backdrop-blur-md border-t border-gray-800/50">
-            <div className="px-2 pt-2 pb-3 space-y-1">
-              {navigationLinks.map((link) => (
+        {/* Mobile Navigation */}
+        {isOpen && (
+          <div className="md:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-900/95 backdrop-blur-sm rounded-lg mt-2">
+              {navItems.map((item) => (
                 <button
-                  key={link.href}
-                  onClick={() => handleNavClick(link.href)}
-                  className="block w-full text-left px-3 py-2 text-gray-300 hover:text-purple-400 hover:bg-purple-500/10 rounded-md transition-colors duration-200"
+                  key={item.href}
+                  onClick={() => scrollToSection(item.href)}
+                  className="text-gray-300 hover:text-purple-400 block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors duration-200"
                 >
-                  {link.label}
+                  {item.label}
                 </button>
               ))}
-
-              {/* Botón CV en móvil */}
-              {cvUrl && (
-                <div className="pt-2">
-                  <Button variant="primary" size="sm" onClick={handleDownloadCV} className="w-full">
-                    <Download className="w-4 h-4 mr-2" />
-                    Descargar CV
-                  </Button>
-                </div>
-              )}
+              <div className="pt-2">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => window.open("/documents/cv-juan-raul-gonzalez.pdf", "_blank")}
+                  className="flex items-center gap-2 w-full"
+                >
+                  <Download size={16} />
+                  Descargar CV
+                </Button>
+              </div>
             </div>
           </div>
         )}
