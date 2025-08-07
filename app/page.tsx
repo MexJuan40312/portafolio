@@ -6,7 +6,7 @@ const personalInfo: PersonalInfo = {
   title: "Estudiante de Ingeniería en Sistemas Computacionales",
   email: "juanraulgonzaleznarvaez@gmail.com",
   phone: "7297005455",
-  linkedin: "https://linkedin.com/in/juan-raul-gonzalez-narvaez",
+  linkedin: "https://www.linkedin.com/in/juan-raul-gonzalez-narvaez-49a89a267/",
   github: "https://github.com/MexJuan40312",
   instagram: "https://www.instagram.com/juanr.gn?igsh=MTFzOTYwZGZkbTY0aQ==",
 }
