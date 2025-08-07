@@ -32,6 +32,15 @@ export const Navbar = () => {
     setIsOpen(false)
   }
 
+  const downloadFile = (filePath: string, fileName: string) => {
+    const link = document.createElement("a")
+    link.href = filePath
+    link.download = fileName
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
+
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -65,7 +74,7 @@ export const Navbar = () => {
             <Button
               variant="outline"
               size="sm"
-              onClick={() => window.open("/documents/cv-juan-raul-gonzalez.pdf", "_blank")}
+              onClick={() => downloadFile("/documents/CV_JR.pdf", "CV_JR.pdf")}
               className="flex items-center gap-2"
             >
               <Download size={16} />
@@ -101,7 +110,7 @@ export const Navbar = () => {
                 <Button
                   variant="outline"
                   size="sm"
-                  onClick={() => window.open("/documents/cv-juan-raul-gonzalez.pdf", "_blank")}
+                  onClick={() => downloadFile("/documents/CV_JR.pdf", "CV_JR.pdf")}
                   className="flex items-center gap-2 w-full"
                 >
                   <Download size={16} />

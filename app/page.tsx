@@ -5,7 +5,7 @@ const personalInfo: PersonalInfo = {
   name: "Juan Raul Gonzalez Narvaez",
   title: "Estudiante de Ingeniería en Sistemas Computacionales",
   email: "juanraul.gonzalez.narvaez@gmail.com",
-  phone: "(+52) 729/009458",
+  phone: "(+52) 7297005455",
   linkedin: "https://linkedin.com/in/juan-raul-gonzalez-narvaez",
   github: "https://github.com/juanraulgonzaleznarvaez",
   instagram: "https://instagram.com/mexjuan40312",

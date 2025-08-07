@@ -64,7 +64,7 @@ export const HeroSection = ({ personalInfo }: HeroSectionProps) => {
               <Button
                 variant="outline"
                 size="lg"
-                onClick={() => window.open("/documents/cv-juan-raul-gonzalez.pdf", "_blank")}
+                onClick={() => window.open("/documents/CV_JR.pdf", "_blank")}
                 className="flex items-center gap-2"
               >
                 <Download size={20} />

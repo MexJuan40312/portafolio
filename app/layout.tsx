@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Portafolio web",
-  description: "Portafolio profesional de desarrollador web especializado en React, Next.js y tecnologías modernas.",
+  description: "Portafolio web de desarrollador web de React, Next.js y tecnologías modernas.",
   keywords: ["desarrollador web", "react", "next.js", "typescript", "portafolio"],
   authors: [{ name: "Juan Raúl Gonzalez Narvaez" }],
   viewport: "width=device-width, initial-scale=1",

@@ -30,7 +30,7 @@ export const ExperienceSection = ({ experiences }: ExperienceSectionProps) => {
               <ul className="space-y-2">
                 {experience.description.map((item, itemIndex) => (
                   <li key={itemIndex} className="text-gray-300 flex items-start">
-                    <span className="text-purple-400 mr-2 mt-1">•</span>
+                    <span className="text-purple-400 mr-2">•</span>
                     {item}
                   </li>
                 ))}

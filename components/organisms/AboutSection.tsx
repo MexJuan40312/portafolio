@@ -61,7 +61,7 @@ export const AboutSection = () => {
           <div className="space-y-8">
             <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-8 border border-gray-700">
               <SkillSection title="Tecnologías" skills={technicalSkills} />
-              <SkillSection title="Certificaciones" skills={certifications} />
+              <SkillSection title="Certificaciones y aptitudes" skills={certifications} />
               <SkillSection title="Idiomas" skills={languages} />
             </div>
           </div>

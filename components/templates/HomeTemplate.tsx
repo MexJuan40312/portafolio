@@ -14,6 +14,7 @@ interface HomeTemplateProps {
   education: Education[]
 }
 
+// Mostrar el template de la página de inicio
 export const HomeTemplate = ({ personalInfo, projects, experiences, education }: HomeTemplateProps) => {
   return (
     <div className="min-h-screen bg-black text-white">
