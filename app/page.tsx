@@ -4,11 +4,11 @@ import type { PersonalInfo, Project, Experience, Education } from "@/types"
 const personalInfo: PersonalInfo = {
   name: "Juan Raul Gonzalez Narvaez",
   title: "Estudiante de Ingeniería en Sistemas Computacionales",
-  email: "juanraul.gonzalez.narvaez@gmail.com",
-  phone: "(+52) 7297005455",
+  email: "juanraulgonzaleznarvaez@gmail.com",
+  phone: "7297005455",
   linkedin: "https://linkedin.com/in/juan-raul-gonzalez-narvaez",
-  github: "https://github.com/juanraulgonzaleznarvaez",
-  instagram: "https://instagram.com/mexjuan40312",
+  github: "https://github.com/MexJuan40312",
+  instagram: "https://www.instagram.com/juanr.gn?igsh=MTFzOTYwZGZkbTY0aQ==",
 }
 
 const projects: Project[] = [
@@ -89,7 +89,7 @@ const education: Education[] = [
   {
     degree: "Ingeniería en Sistemas Computacionales",
     institution: "Tecnológico de Estudios Superiores de Jocotitlán",
-    period: "2020 - Presente",
+    period: "2021 - Presente",
     description: "Especialización en desarrollo de software, bases de datos y sistemas computacionales.",
   },
   {
