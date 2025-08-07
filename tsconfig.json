@@ -12,18 +12,14 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/components/*": ["./app/components/*"],
-      "@/types/*": ["./app/types/*"],
-      // ¡CORRECCIÓN CRÍTICA AQUÍ!
-      "@/lib/*": ["./lib/*"] // La carpeta 'lib' está en la raíz, no dentro de 'app'
-    },
     "plugins": [
       {
         "name": "next"
       }
-    ]
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]

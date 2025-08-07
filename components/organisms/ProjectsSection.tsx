@@ -1,4 +1,4 @@
-import type { Project } from "@/types/index"
+import type { Project } from "@/types"
 import { ProjectCard } from "@/components/molecules/ProjectCard"
 
 interface ProjectsSectionProps {

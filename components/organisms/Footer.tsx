@@ -1,4 +1,4 @@
-import type { PersonalInfo } from "@/types/index"
+import type { PersonalInfo } from "@/types"
 import { SocialLinks } from "@/components/molecules/SocialLinks"
 
 interface FooterProps {

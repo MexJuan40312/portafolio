@@ -1,5 +1,5 @@
 import { Github, Linkedin, Instagram, Mail, Phone } from "lucide-react"
-import type { PersonalInfo } from "@/types/index"
+import type { PersonalInfo } from "@/types"
 
 interface SocialLinksProps {
   personalInfo: PersonalInfo

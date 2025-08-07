@@ -1,7 +1,7 @@
 "use client"
 
 import { Github } from "lucide-react"
-import type { Project } from "@/types/index"
+import type { Project } from "@/types"
 import { Button } from "@/components/atoms/Button"
 import { Badge } from "@/components/atoms/Badge"
 import Image from "next/image"

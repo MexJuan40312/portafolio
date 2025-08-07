@@ -1,4 +1,4 @@
-import type { Experience } from "@/types/index"
+import type { Experience } from "@/types"
 
 interface ExperienceSectionProps {
   experiences: Experience[]
