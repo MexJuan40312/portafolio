@@ -110,7 +110,7 @@ export const Navbar = () => {
                 <Button
                   variant="outline"
                   size="sm"
-                  onClick={() => downloadFile("/documents/CV_JR.pdf", "CV_JR.pdf")}
+                  onClick={() => downloadFile("/documents/CV_JR_Ing.pdf", "CV_JR.pdf")}
                   className="flex items-center gap-2 w-full"
                 >
                   <Download size={16} />

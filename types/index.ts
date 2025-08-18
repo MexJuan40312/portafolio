@@ -15,6 +15,7 @@ export interface PersonalInfo {
   linkedin: string
   github: string
   instagram: string
+  youtube: string
 }
 
 export interface Experience {
