@@ -66,37 +66,4 @@ export const SocialLinks = ({ personalInfo, showLabels = false }: SocialLinksPro
     </div>
   )
 }
-export const projects: Project[] = [
-  {
-    id: "1",
-    title: "Sistema de recomendación de hábitos con IA | Habits_AI",
-    description: "Aplicación que utiliza IA para generar recomendaciones personalizadas basadas en los hábitos del usuario.",
-    technologies: ["FastAPI", "React", "Tailwind", "SQLite", "Python", "API"],
-    githubUrl: "https://github.com/MexJuan40312/habits_ia",
-    imageUrl: "/",
-  },
-  {
-    id: "2",
-    title: "Sistema de recomendación nutricional | NutriTec",
-    description: "Aplicación web que genera planes nutricionales personalizados basado en los objetivos, características y estilo de vida de los usuarios utilizando IA.",
-    technologies: ["Express", "Next.js", "TypeScript", "TypeScript", "MySQL"],
-    githubUrl: "https://github.com/MexJuan40312/NutriTec",
-    imageUrl: "/public/images/nutritec_inicio.png",
-  },
-  {
-    id: "3",
-    title: "Homefinder",
-    description: "Aplicación web para encontrar y comparar propiedades inmobiliarias.",
-    technologies: ["Express", "MySQL", "Pug", "Tailwind CSS"],
-    githubUrl: "",
-    imageUrl: "",
-  },
-  {
-    id: "4",
-    title: "TesJobs",
-    description: "Aplicación web para encontrar y comparar empleos",
-    technologies: ["PHP", "MySQL", "Docker", "Linux", "Laravel", "Tailwind CSS"],
-    githubUrl: "",
-    imageUrl: "",
-  },
-]
+

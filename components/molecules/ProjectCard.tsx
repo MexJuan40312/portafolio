@@ -1,5 +1,3 @@
-"use client"
-
 import { Github } from "lucide-react"
 import type { Project } from "@/types"
 import { Button } from "@/components/atoms/Button"
@@ -14,7 +12,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10">
       <div className="flex flex-col h-full">
-        {/* Project Image */}
+        {/* Imagen del proyecto */}
         <div className="relative h-48 w-full overflow-hidden">
           <Image
             src={project.imageUrl || "/placeholder.svg?height=192&width=400&text=Project+Preview"}
@@ -25,15 +23,15 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
           <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent"></div>
         </div>
 
-        {/* Content */}
+        {/* Contenido */}
         <div className="p-6 flex-1 flex flex-col">
           <div className="flex-1">
             <h3 className="text-xl font-bold text-white mb-3">{project.title}</h3>
             <p className="text-gray-300 mb-4 leading-relaxed">{project.description}</p>
 
             <div className="flex flex-wrap gap-2 mb-6">
-              {project.technologies.map((tech, index) => (
-                <Badge key={index} variant="purple">
+              {project.technologies.map((tech) => (
+                <Badge key={tech} variant="purple">
                   {tech}
                 </Badge>
               ))}
@@ -44,7 +42,9 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
             <Button
               variant="primary"
               size="sm"
-              onClick={() => window.open(project.githubUrl, "_blank")}
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2"
             >
               <Github size={16} />

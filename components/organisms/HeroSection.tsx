@@ -20,18 +20,18 @@ export const HeroSection = ({ personalInfo }: HeroSectionProps) => {
 
   return (
     <section id="inicio" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Background gradient */}
+      {/* Fondo con gradiantes */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-gray-900 to-black"></div>
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900/20 via-transparent to-transparent"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Profile Image */}
+          {/* Imagen de perfil */}
           <div className="flex justify-center lg:justify-end order-1 lg:order-2">
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-purple-500/30 shadow-2xl shadow-purple-500/20">
                 <Image
-                  src="/placeholder.svg?height=320&width=320&text=Profile+Photo"
+                  src="/nutritec_inicio.png"
                   alt={personalInfo.name}
                   width={320}
                   height={320}
@@ -42,7 +42,7 @@ export const HeroSection = ({ personalInfo }: HeroSectionProps) => {
             </div>
           </div>
 
-          {/* Content */}
+          {/* Contenido */}
           <div className="text-center lg:text-left order-2 lg:order-1">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               <span className="block">{personalInfo.name}</span>
@@ -52,8 +52,8 @@ export const HeroSection = ({ personalInfo }: HeroSectionProps) => {
             </h1>
 
             <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-2xl">
-              Estudiante de Ingeniería con conocimientos en desarrollo web, mantenimiento de hardware y diseño gráfico.
-              Apasionado por aprender, colaborar y aportar valor en entornos dinámicos.
+              Pasante de Ingeniería en sistemas computacionales, con +3 años de experiencia en desarrollo web Full Stack en Frameworks modernos como Next.js, 
+              express.js y Laravel, bases de datos SQL y NoSQL, microservicios, desarrollo de API's e integración de inteligencia artificial.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
