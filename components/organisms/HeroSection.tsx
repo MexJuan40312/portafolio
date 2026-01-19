@@ -53,7 +53,7 @@ export const HeroSection = ({ personalInfo }: HeroSectionProps) => {
 
             <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-2xl">
               Pasante de Ingeniería en sistemas computacionales, con +3 años de experiencia en desarrollo web Full Stack en Frameworks modernos como Next.js, 
-              express.js y Laravel, bases de datos SQL y NoSQL, microservicios, desarrollo de APIs e integración de inteligencia artificial.
+              express.js y Laravel, bases de datos SQL y NoSQL, microservicios e integración de inteligencia artificial.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">

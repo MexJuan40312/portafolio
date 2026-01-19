@@ -74,11 +74,11 @@ export const experiences: Experience[] = [
       "Divulgación de conocimientos técnicos de prácticas escolares y personales haciendo uso de diversas herramientas.",],
   },
   {
-    title: "Instructor - Taller de Desarrollo Front-End (Next.js)",
-    period: "2025",
+    title: "Prácticas profesionales",
+    period: "2025 - Presente",
     description: [
-      "Planificación y facilitación de un taller para +25 estudiantes sobre desarrollo moderno en frontend.",
-      "Enseñanza de conceptos clave como React, Next.js, Tailwind CSS y despliegue en Vercel.",
+      "Desarrollo de un chatbot para WhatsApp con Inteligencia artificial utilizando la arquitectura RAG.",
+      "Creación y mantenimiento de bases de datos en MySQL para la gestión de equipo recursos de la dependencia.",
     ],
   }
 ]

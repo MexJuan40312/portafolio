@@ -1,7 +1,6 @@
 import type { ButtonHTMLAttributes, AnchorHTMLAttributes, ReactNode } from "react"
 import { cn } from "@/lib/utils"
 
-// 1. Definimos las props visuales (comunes a ambos)
 interface ButtonBaseProps {
   children: ReactNode
   variant?: "primary" | "secondary" | "outline"
@@ -9,21 +8,17 @@ interface ButtonBaseProps {
   className?: string
 }
 
-// 2. Definimos las props para cuando actúa como <button>
-// "href?: never" asegura que no puedas pasarle href a un botón por error
 type ButtonAsButton = ButtonBaseProps &
   ButtonHTMLAttributes<HTMLButtonElement> & {
     href?: never
   }
 
-// 3. Definimos las props para cuando actúa como <a>
-// "href: string" es obligatorio aquí
+
 type ButtonAsLink = ButtonBaseProps &
   AnchorHTMLAttributes<HTMLAnchorElement> & {
     href: string
   }
 
-// 4. Unimos los tipos
 type ButtonProps = ButtonAsButton | ButtonAsLink
 
 export const Button = ({ 
@@ -51,8 +46,7 @@ export const Button = ({
 
   const combinedStyles = cn(baseStyles, variants[variant], sizes[size], className)
 
-  // Lógica de Polimorfismo:
-  // Si existe 'href' en las props, renderizamos un <a>
+
   if ("href" in props && props.href) {
     return (
       <a className={combinedStyles} {...(props as AnchorHTMLAttributes<HTMLAnchorElement>)}>
@@ -61,7 +55,6 @@ export const Button = ({
     )
   }
 
-  // Si no, renderizamos un <button>
   return (
     <button className={combinedStyles} {...(props as ButtonHTMLAttributes<HTMLButtonElement>)}>
       {children}
