@@ -31,7 +31,7 @@ export const HeroSection = ({ personalInfo }: HeroSectionProps) => {
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-purple-500/30 shadow-2xl shadow-purple-500/20">
                 <Image
-                  src="/nutritec_inicio.png"
+                  src="/image.png"
                   alt={personalInfo.name}
                   width={320}
                   height={320}
