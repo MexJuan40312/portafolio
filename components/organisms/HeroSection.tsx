@@ -52,8 +52,7 @@ export const HeroSection = ({ personalInfo }: HeroSectionProps) => {
             </h1>
 
             <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-2xl">
-              Pasante de Ingeniería en sistemas computacionales, con +3 años de experiencia en desarrollo web Full Stack en Frameworks modernos como Next.js, 
-              express.js y Laravel, bases de datos SQL y NoSQL, microservicios e integración de inteligencia artificial.
+              Ingeniero en sistemas computaciones con experiencia en el ciclo completo del Desarrollo de Software, análisis de datos, automatización.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
@@ -64,7 +63,7 @@ export const HeroSection = ({ personalInfo }: HeroSectionProps) => {
               <Button
                 variant="outline"
                 size="lg"
-                onClick={() => window.open("/documents/CV_JR_Ing.pdf", "_blank")}
+                onClick={() => window.open("/documents/Juan_Gonzalez_Ingeniero_de_Datos_y_Desarrollo.pdf", "_blank")}
                 className="flex items-center gap-2"
               >
                 <Download size={20} />

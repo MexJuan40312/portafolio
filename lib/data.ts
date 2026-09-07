@@ -3,7 +3,7 @@ import type { PersonalInfo, Project, Experience, Education } from "@/types"
 
 export const personalInfo: PersonalInfo = {
   name: "Juan Raul Gonzalez Narvaez",
-  title: "Pasante de Ingeniería en Sistemas con experiencia en Desarrollo de web, Bases de datos, Diseño UX/UI y Microservicios",
+  title: "Ingeniero en sistemas computacionales",
   email: "juanraulgonzaleznarvaez@gmail.com",
   phone: "7297005455",
   linkedin: "https://www.linkedin.com/in/juan-raul-gonzalez-narvaez-49a89a267/",
@@ -51,34 +51,37 @@ export const projects: Project[] = [
 
 export const experiences: Experience[] = [
   {
-    title: "Instructor - Taller de Desarrollo Front-End (Next.js)",
-    period: "2025",
+    title: "Desarrollador de Software e Ingeniero de datos",
+    period: "Marzo 2026 - Presente",
     description: [
-      "Planificación y facilitación de un taller para +25 estudiantes sobre desarrollo moderno en frontend.",
-      "Enseñanza de conceptos clave como React, Next.js, Tailwind CSS y despliegue en Vercel.",
+      "Actualización y mantenimiento de aplicaciones Web en PHP como la tienda en linea.",
+      "Migración y automatización de archivos .dbf a bases de datos de SQLServer para la creación de sistemas web.",
+      "Desarrollo de aplicaciones web enfocadas en la optimización de procesos logísticos, producción y almacen.",
+      "Creación y mantenimiento de tableros de PowerBI para el análisis del comportamiento de negocio y toma de decisiones."
     ],
-  },
-  {
-    title: "Técnico en mantenimiento de equipos de cómputo",
-    period: "2023 - Presente",
-    description: [
-      "Mantenimiento preventivo y correctivo que optimizó el rendimiento de equipos.",
-      "Instalación y configuración de software y controladores permitiendo la mejora de la productividad y compatibilidad con nuevas tecnologías.",
-    ],
-  },
-  {
-    title: "Creador de contenido tecnológico en YouTube",
-    period: "2023 - Presente",
-    description: [
-      "Producción de material educativo sobre desarrollo web, ciberseguridad y programación.",
-      "Divulgación de conocimientos técnicos de prácticas escolares y personales haciendo uso de diversas herramientas.",],
   },
   {
     title: "Prácticas profesionales",
-    period: "2025 - Presente",
+    period: "Septiembre del 2025 - Enero del 2026",
     description: [
-      "Desarrollo de un chatbot para WhatsApp con Inteligencia artificial utilizando la arquitectura RAG.",
-      "Creación y mantenimiento de bases de datos en MySQL para la gestión de equipo recursos de la dependencia.",
+      "Construcción de un Chatbot de Inteligencia Artificial para WhatsApp utilizando la arquitectura RAG, Meta API y Next.js.",
+      "Desarrollo de un servidor de Elastix montado sobre Debian (Linux) para la implementación de un protocolo VOiP, en respuesta de la falta de un conmutador funcional.",],
+  },
+  {
+    title: "Desarrollo Freelance",
+    period: "2019 - Presente",
+    description: [
+      "Creación y venta de páginas Web con HTML, CSS y JavaScript, para clientes finales como estudiantes y comunidad cercana",
+      "Desarrollo de videojuegos en 2D utilizando programación por bloques y C++ en motores como Unity",
+      "Diseño de interfaces de usuario utilizando programas de edición como Corel Draw, Canva, Power Point y Figma",
+      "Creación de contenido multimedia con fines educativos en YouTube"
+    ],
+  },
+{
+    title: "Participaciones en eventos",
+    period: "2024",
+    description: [
+      "Instructor de un taller de desarrollo web utilizando React y TypeScript en el congreso Nacional de Ingeniería en Sistemas computacionales celebrado en el Tecnológico de Estudios Superiores de Jocotiltlá."
     ],
   }
 ]
@@ -93,7 +96,7 @@ export const education: Education[] = [
   {
     degree: "Técnico en animación digital",
     institution: "Bachillerato tecnológico bivalente CECYTEM",
-    period: "2019-2021",
+    period: "2018-2021",
     description: "",
   },
 ]

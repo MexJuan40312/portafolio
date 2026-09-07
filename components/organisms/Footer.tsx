@@ -12,7 +12,7 @@ export const Footer = ({ personalInfo }: FooterProps) => {
         <div className="text-center">
           <h3 className="text-2xl font-bold text-white mb-4">{personalInfo.name}</h3>
           <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-            Estudiante de Ingeniería en Sistemas Computacionales especializado en desarrollo web. Siempre abierto a
+            Ingniero en Sistemas Computacionales especializado en desarrollo web. Siempre abierto a
             nuevas oportunidades y colaboraciones.
           </p>
 

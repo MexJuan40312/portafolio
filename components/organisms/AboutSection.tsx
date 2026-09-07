@@ -48,8 +48,7 @@ export const AboutSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">Sobre Mí</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Soy un estudiante de Ingeniería en Sistemas Computacionales apasionado por la tecnología y el desarrollo de
-            soluciones innovadoras, interesado por aprender más en el desarrollo de proyectos reales con impacto real en el área.
+            Ingeniero en sistemas computacionales, con gran pasión por resolver problemas mediante estrategias estructuradas. Apasionado por le tecnología y aprender.
           </p>
         </div>
 
@@ -59,26 +58,21 @@ export const AboutSection = () => {
               <h3 className="text-2xl font-bold text-white mb-6">Mi Historia</h3>
               <div className="space-y-4 text-gray-300 leading-relaxed text-justify">
                 <p>
-                  Soy un estudiante de Ingeniería en Sistemas Computacionales, cerca de terminar la carrera apasionado por crear soluciones tecnológicas 
-                  que realmente aporten valor. A lo largo de mi formación y experiencia, he desarrollado una base sólida en 
-                  desarrollo web, bases de datos y metodologías ágiles, pero también una profunda curiosidad por entender cómo 
-                  funcionan las cosas y cómo optimizarlas.
+                  Egresado en 2026 de la carrera de Ingeniería en sistemas Computacionales, soy una persona autodidacta y autónoma que siempre ha tenido mucha pasión por la tecnología, enfocado en dar soluciones óptimas
+                  a los problemas que se presentan. 
                 </p>
                 <p>
-                  Mi camino en la tecnología comenzó desde la niñez jugando videojuegos de forma constante pero con el tiempo mi curiosidad me llevó al porqué
-                  de las cosas cuando jugaba como bugs, hacks, etc. Entonces esa curiosidad me llevó a aprender de manera autodidacta conceptos técnicos que 
-                  evolucionaron hasta hacerme decidir integrarme a una carrera técnica en animación digital donde también conocí JavaScript como lenguaje de programación, 
-                  con el tiempo, mi enfoque evolucionó hacia el desarrollo de web completas pero no solo en eso, si no en ciberseguridad, bases de datos, desarrollo 
-                  de videojuegos y hasta diseño 2D y 3D.
+                  Mi camino en la tecnología comenzó a temprana edad tomando clases de electrónica en una secundaria técnica y posteriormente  de 2018 a 2021, animación digital en el bachillerato. Fue aquí cuando comencé a 
+                  desarrollar proyectos para diferentes compañeros, destacando algunos como el desarrollo de un videojuego en 2D y páginas web.  A mediados del 2021, entré a la carrera de Ingeniería en sistemas 
+                  Computacionales con el objetivo de desarrollarme profesionalmente, mejorar mis habilidades y descubrir algunas otras. Actualmente he tenido experiencia desarrollando aplicaciones de impacto real 
+                  en diferentes empresas e instituciones, lo que me ha dejado con la seguridad de decir que soy bueno en lo mío.
                 </p>
                 <p>
-                  Me gusta trabajar en proyectos donde pueda combinar análisis, estructura y buenas prácticas, siempre buscando mejorar 
-                  el rendimiento, la arquitectura, escalabilidad y la experiencia del usuario. Disfruto aprender nuevas tecnologías, asumir retos y participar
-                  en equipos donde se valore la mejora continua.
+                  Me gusta trabajar en proyectos de impacto real aplicando mis conocimientos y habilidades, enfocandote en construir la mejor solución posible teniendo siempre en cuenta buenas prácticas de 
+                  desarrollo, priorizando la calidad sobre la cantidad pues mi metodología de trabajo es anallizar el problema, planear, actuar, probar la solución
                 </p>
                 <p>
-                  Actualmente me especializo en crear soluciones modernas que no solo cumplan con los requisitos técnicos, sino que también sean intuitivas, seguras 
-                  y pensadas para el crecimiento futuro.
+                  Actualmente trabajo como Desarrollador de Software e ingeniero de datos, así como desarrollador Freeelancer ofreciendo sistemas de análisis y exposición de marca.
                 </p>
               </div>
             </div>
